@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import Payment from './Payment';
 
 function App() {
 
@@ -28,7 +29,7 @@ let [price, setPrice] = useState([])
     <>
       <div className="App">
 
-
+<Payment></Payment>
 
         <button onClick={showPrices}>Show Prices</button>
 
