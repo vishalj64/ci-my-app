@@ -11,7 +11,7 @@ let [price, setPrice] = useState([])
   function showPrices() {
 
     fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
-    .then(res => res.json())
+    .then(res1 => res1.json())
     .then(res => {
       let arr1 = []
       for(let each in res.bpi) {
