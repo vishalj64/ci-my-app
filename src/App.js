@@ -13,11 +13,11 @@ let [price, setPrice] = useState([])
     fetch("https://api.coindesk.com/v1/bpi/currentprice.json")
     .then(res => res.json())
     .then(res => {
-      let arr = []
+      let arr1 = []
       for(let each in res.bpi) {
-        arr.push(res.bpi[each])
+        arr1.push(res.bpi[each])
       }
-      setPrice(arr)
+      setPrice(arr1)
     })
 
   
