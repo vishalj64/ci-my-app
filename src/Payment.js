@@ -4,6 +4,7 @@ let Payment = () => {
     return (
         <>
     
+    <p>This is payment</p>
         </>
     )
 }
